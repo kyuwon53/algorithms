@@ -1,25 +1,23 @@
-package chapter1;
+package chapter1.sub1;
 
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class Solution1Test {
+class Solution3Test {
     @Test
     void it_return_equal() {
-        String result = Solution1.result(3, 3, 3);
+        String result = Solution3.result(3, 3, 3);
         assertEquals(result, "equal");
     }
 
     @Test
-    void it_return_not_equal_when_1_3_3() {
-        String result = Solution1.result(1, 3, 3);
-        assertEquals(result, "not equal");
-    }
+    void it_return_not_equal() {
 
-    @Test
-    void it_return_not_equal_when_1_2_3() {
-        String result = Solution1.result(1, 2, 3);
-        assertEquals(result, "not equal");
+        assertAll(
+                () -> assertEquals(Solution3.result(1, 3, 3), "not equal"),
+                () -> assertEquals(Solution3.result(1, 2, 3), "not equal")
+        );
     }
 }

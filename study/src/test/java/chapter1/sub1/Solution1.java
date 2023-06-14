@@ -1,10 +1,10 @@
-package chapter1;
+package chapter1.sub1;
 
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class Solution1_1 {
+public class Solution1 {
     @Test
     void problem1_1_a() {
         assertEquals(((0 + 15) / 2), 7);
@@ -37,6 +37,15 @@ public class Solution1_1 {
     @Test
     void problem1_2_d(){
         String s = 1 + 2 + "3";
+    }
+    @Test
+    void problem1_4_a(){
+        int a = 1;
+        int b = 2;
+        int c;
+        if (a > b) { c = 0; }
+        if( a > b) c = 0;
+        if ( a > b) c = 0; else b = 0;
     }
 }
 

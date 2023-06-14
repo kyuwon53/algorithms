@@ -1,8 +1,8 @@
-package chapter1;
+package chapter1.sub1;
 
 import java.util.Scanner;
 
-public class Solution1 {
+public class Solution3 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int num1 = sc.nextInt();
